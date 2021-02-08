@@ -1,0 +1,19 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/keyboard-1356362-1235306.png" alt="TecladosMisael" class="img-responsive " height="150">
+      </div>
+      <div class="col-md-8">
+        <h1 class="display-6">Teclados baratos al mejor precio!</h1>
+      </div>
+  </div>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div *ngFor="let keyboard of keyboards" class="col-12 col-md-6  col-lg-4">
+    <app-keyboard-item [keyboard]="keyboard"></app-keyboard-item>
+  </div>
+</div>

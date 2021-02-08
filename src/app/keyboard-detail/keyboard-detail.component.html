@@ -1,0 +1,23 @@
+<figure class="figure">
+  <img src="{{keyboard.image}}" class="figure-img img-fluid rounded">
+  <figcaption class="figure-caption">
+    <h4>Title: {{keyboard.title}}</h4>
+    <h5>Price: {{keyboard.price | currency}}</h5>
+    <h5> Description: {{keyboard.description}}</h5>
+  </figcaption>
+</figure>
+
+<div class="row mt-4">
+  <div class="col-md-4">
+    <button class="btn btn-outline-secondary mr-3"
+            style="width:80px"
+            (click)="onBack()">
+      <i class="fa fa-chevron-left"></i> Back
+    </button>
+    <button class="btn btn-outline-primary"
+            style="width:80px"
+            (click)="goEdit()">
+      Edit
+    </button>
+  </div>
+</div>

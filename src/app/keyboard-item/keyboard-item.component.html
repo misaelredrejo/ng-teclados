@@ -1,0 +1,20 @@
+<!--<figure class="figure">
+  <img src="{{keyboard.image}}" class="figure-img img-fluid rounded">
+  <figcaption class="figure-caption">
+    <h5><a [routerLink]="['/keyboards', keyboard.id]">{{keyboard.title}}</a>
+      <span>{{keyboard.price | currency}}</span>
+    </h5>
+    <p>{{keyboard.description}}</p>
+  </figcaption>
+</figure>-->
+
+
+<div class="card card-margin" style="width: 17rem;">
+  <img class="card-img-top" src="{{keyboard.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5><a [routerLink]="['/keyboards', keyboard.id]">{{keyboard.title}}</a>
+      <span>{{keyboard.price | currency}}</span>
+    </h5>
+    <p>{{keyboard.description}}</p>
+  </div>
+</div>
