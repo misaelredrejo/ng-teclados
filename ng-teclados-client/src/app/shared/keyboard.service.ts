@@ -10,7 +10,7 @@ import { Keyboard } from './keyboard';
   providedIn: 'root'
 })
 export class KeyboardService {
-  private keyboardsUrl = 'api/keyboards';
+  private keyboardsUrl = 'http://localhost:8000/teclados';
 
   constructor(private http: HttpClient) { }
 

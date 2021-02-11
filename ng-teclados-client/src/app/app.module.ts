@@ -14,7 +14,6 @@ import { KeyboardService } from './shared/keyboard.service';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { KeyboardEditComponent } from './keyboard-edit/keyboard-edit.component';
-import { KeyboardData } from './shared/keyboard-data';
 import { HttpClientModule } from '@angular/common/http';
 import { KeyboardNewComponent } from './keyboard-new/keyboard-new.component';
 
@@ -37,7 +36,7 @@ import { KeyboardNewComponent } from './keyboard-new/keyboard-new.component';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    InMemoryWebApiModule.forRoot(KeyboardData)
+    //InMemoryWebApiModule.forRoot(KeyboardData)
   ],
   providers: [KeyboardService],
   bootstrap: [AppComponent]
